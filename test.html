@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniform Icons</title>
+    <style>
+        body {
+            background: #000;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Method 1: Container approach with consistent background */
+        .icon-container {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: transparent;
+            border-radius: 8px;
+            padding: 8px;
+            margin: 5px;
+            box-sizing: border-box;
+        }
+
+        .icon-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* Method 2: Flexbox centering approach */
+        .icon-flex {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .icon-flex img {
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+        }
+
+        /* Method 3: Direct sizing with background normalization */
+        .icon-direct {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            margin: 5px;
+            border-radius: 8px;
+            background: #1a1a1a;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+
+        .section {
+            margin: 30px 0;
+            color: white;
+        }
+
+        h3 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h3>Method 1: Container with transparent background</h3>
+        <div class="icon-container">
+            <img src="./img/html-logo.png" alt="HTML5">
+        </div>
+        <div class="icon-container">
+            <img src="./img/css-logo.png" alt="CSS3">
+        </div>
+        <div class="icon-container">
+            <img src="./img/js-logo.png" alt="JavaScript">
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Method 2: Flexbox with subtle background</h3>
+        <div class="icon-flex">
+            <img src="./img/icons8-html-5-144.png" alt="HTML5">
+        </div>
+        <div class="icon-flex">
+            <img src="./img/css-logo.png" alt="CSS3">
+        </div>
+        <div class="icon-flex">
+            <img src="./img/js-logo.png" alt="JavaScript">
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Method 3: Direct styling with dark background</h3>
+        <img class="icon-direct" src="./img/icons8-html-5-144.png" alt="HTML5">
+        <img class="icon-direct" src="./img/css-logo.png" alt="CSS3">
+        <img class="icon-direct" src="./img/js-logo.png" alt="JavaScript">
+    </div>
+
+    <div class="section">
+        <h3>Your current approach (for comparison)</h3>
+        <img src="./img/html-logo.png" alt="HTML5" style="width: 50px; height: 50px; margin: 5px;">
+        <img src="./img/css-logo.png" alt="CSS3" style="width: 50px; height: 50px; object-fit: scale-down; margin: 5px;">
+        <img src="./img/js-logo.png" alt="JavaScript" style="width: 50px; height: 50px; object-fit: scale-down; margin: 5px;">
+    </div>
+</body>
+</html>
