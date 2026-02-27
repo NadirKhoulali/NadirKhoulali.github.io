@@ -1,0 +1,2 @@
+i want you to redesign my portfolio, in a new modern style while keeping it unique and still have some personality. give me some ideas for the styling and i'll take a look at it and choose wich one fits best.
+Also, ifyou have any ideas i sohuld add to my portfolio, please do tell me.
