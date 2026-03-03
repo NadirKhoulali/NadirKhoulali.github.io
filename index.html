@@ -122,7 +122,7 @@
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="cv/Nadir_Khoulali_CV.pdf" download class="glow-btn inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-white font-semibold text-sm">
+        <a href="./Nadir%20Khoulali%20CV%20(2026).pdf" download class="glow-btn inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-white font-semibold text-sm">
           <i class="fa-solid fa-download"></i>
           <span data-i18n="heroCTA">Download CV</span>
         </a>
@@ -132,12 +132,21 @@
         </a>
       </div>
 
-      <!-- Scroll indicator -->
-      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 scroll-indicator">
-        <div class="flex flex-col items-center gap-2 text-gray-400 dark:text-slate-500">
-          <span class="text-xs font-mono" data-i18n="heroScrollDown">Scroll Down</span>
-          <i class="fa-solid fa-chevron-down text-neon-cyan"></i>
-        </div>
+      <!-- Internship Badge -->
+      <div class="mt-8 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-green-500/30 bg-green-500/10">
+        <span class="relative flex h-2.5 w-2.5">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+        </span>
+        <span class="text-xs font-mono text-green-400" data-i18n="heroInternship">Open to Internship Opportunities</span>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-20  z-10 scroll-indicator">
+      <div class="flex flex-col items-center gap-2 text-gray-400 dark:text-slate-500">
+        <span class="text-xs font-mono" data-i18n="heroScrollDown">Scroll Down</span>
+        <i class="fa-solid fa-chevron-down text-neon-cyan"></i>
       </div>
     </div>
   </section>
@@ -164,22 +173,21 @@
             With experience in web development (HTML, CSS, JavaScript, PHP, MySQL) and game development (Java), I've completed multiple projects that showcase both my technical skills and creative thinking.
           </p>
           <p class="text-gray-600 dark:text-slate-400 leading-relaxed" data-i18n="aboutP3">
-            My goal is to become a skilled full-stack developer who creates meaningful digital experiences. I'm always eager to learn new technologies and take on exciting challenges.
+            My goal is to become a skilled full-stack developer who creates meaningful digital experiences. I'm currently looking for an internship where I can apply my skills in a professional environment and continue growing as a developer.
           </p>
         </div>
 
         <!-- Image / Info Card -->
         <div class="flex justify-center">
           <div class="glass-card p-8 max-w-sm w-full text-center">
-            <img src="./img/image2.png" alt="Nadir Khoulali" class="w-48 h-48 mx-auto rounded-2xl object-cover mb-6" loading="lazy">
+            <img src="./img/profile.png" alt="Nadir Khoulali" class="w-48 h-48 mx-auto rounded-2xl object-cover mb-6" loading="lazy">
             <h3 class="text-xl font-bold font-mono gradient-text mb-2">Nadir Khoulali</h3>
-            <p class="text-sm text-gray-500 dark:text-slate-400 font-mono">Software Developer Student</p>
-            <p class="text-sm text-gray-500 dark:text-slate-400">ROC Mondriaan — The Hague</p>
+            <p class="text-sm text-gray-500 dark:text-slate-400 font-mono" data-i18n="aboutCardRole">Software Developer Student</p>
+            <p class="text-sm text-gray-500 dark:text-slate-400" data-i18n="aboutCardLocation">ROC Mondriaan — The Hague</p>
             <div class="flex justify-center gap-4 mt-6">
-              <a href="https://instagram.com/NadirKhoulali" target="_blank" class="social-icon text-xl text-gray-400 dark:text-slate-500"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://twitter.com/Nadir_Khoulali" target="_blank" class="social-icon text-xl text-gray-400 dark:text-slate-500"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://facebook.com/NadirKhoulali01" target="_blank" class="social-icon text-xl text-gray-400 dark:text-slate-500"><i class="fa-brands fa-facebook"></i></a>
               <a href="https://linkedin.com/in/nadir-khoulali" target="_blank" class="social-icon text-xl text-gray-400 dark:text-slate-500"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/NadirKhoulali" target="_blank" class="social-icon text-xl text-gray-400 dark:text-slate-500"><i class="fa-brands fa-github"></i></a>
+              <a href="mailto:n_khoulali@outlook.com" class="social-icon text-xl text-gray-400 dark:text-slate-500"><i class="fa-solid fa-envelope"></i></a>
             </div>
           </div>
         </div>
@@ -197,102 +205,189 @@
 
       <div data-animate class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold font-mono gradient-text inline-block mb-4" data-i18n="skillsTitle">My Skills</h2>
-        <p class="text-gray-500 dark:text-slate-400" data-i18n="skillsSubtitle">Technologies I work with</p>
+        <p class="text-gray-500 dark:text-slate-400" data-i18n="skillsSubtitle">Technologies & tools I work with</p>
       </div>
 
-      <div data-animate class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-        <!-- HTML -->
-        <div data-animate-child class="glass-card p-6 skill-bar-container">
-          <div class="flex items-center gap-4 mb-4">
-            <img src="./img/html-logo.png" alt="HTML" class="icon-direct">
-            <div>
-              <h3 class="font-bold font-mono text-gray-800 dark:text-white">HTML</h3>
-              <p class="text-xs text-gray-500 dark:text-slate-400">Markup Language</p>
-            </div>
-            <span class="ml-auto font-mono text-sm text-neon-cyan">85%</span>
+      <!-- Frontend -->
+      <div data-animate class="mb-12">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-8 h-8 rounded-lg bg-neon-cyan/10 border border-neon-cyan/20 flex items-center justify-center">
+            <i class="fa-solid fa-display text-neon-cyan text-sm"></i>
           </div>
-          <div class="w-full h-2 bg-gray-200 dark:bg-white/10 rounded-full overflow-hidden">
-            <div class="skill-fill h-full rounded-full" data-width="85%"></div>
+          <h3 class="text-lg font-bold font-mono text-gray-800 dark:text-white" data-i18n="skillsFrontend">Frontend</h3>
+          <div class="flex-1 h-px bg-gradient-to-r from-neon-cyan/20 to-transparent"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- HTML -->
+          <div data-animate-child class="glass-card p-5 skill-bar-container cursor-pointer" data-skill="html">
+            <div class="flex items-center gap-3 mb-3">
+              <img src="./img/html-logo.png" alt="HTML" class="w-8 h-8 object-contain">
+              <div class="flex-1 min-w-0">
+                <h4 class="font-semibold font-mono text-sm text-gray-800 dark:text-white">HTML5</h4>
+              </div>
+            </div>
+          </div>
+          <!-- CSS -->
+          <div data-animate-child class="glass-card p-5 skill-bar-container cursor-pointer" data-skill="css">
+            <div class="flex items-center gap-3 mb-3">
+              <img src="./img/css-logo.png" alt="CSS" class="w-8 h-8 object-contain">
+              <div class="flex-1 min-w-0">
+                <h4 class="font-semibold font-mono text-sm text-gray-800 dark:text-white">CSS3</h4>
+              </div>
+            </div>
+          </div>
+          <!-- JavaScript -->
+          <div data-animate-child class="glass-card p-5 skill-bar-container cursor-pointer" data-skill="javascript">
+            <div class="flex items-center gap-3 mb-3">
+              <img src="./img/js-logo.png" alt="JavaScript" class="w-8 h-8 object-contain">
+              <div class="flex-1 min-w-0">
+                <h4 class="font-semibold font-mono text-sm text-gray-800 dark:text-white">JavaScript</h4>
+              </div>
+            </div>
+          </div>
+          <!-- TypeScript -->
+          <div data-animate-child class="glass-card p-5 skill-bar-container cursor-pointer" data-skill="typescript">
+            <div class="flex items-center gap-3 mb-3">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" class="w-8 h-8 object-contain">
+              <div class="flex-1 min-w-0">
+                <h4 class="font-semibold font-mono text-sm text-gray-800 dark:text-white">TypeScript</h4>
+              </div>
+            </div>
+          </div>
+          <!-- React / Next.js -->
+          <div data-animate-child class="glass-card p-5 skill-bar-container cursor-pointer" data-skill="react">
+            <div class="flex items-center gap-3 mb-3">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" class="w-8 h-8 object-contain">
+              <div class="flex-1 min-w-0">
+                <h4 class="font-semibold font-mono text-sm text-gray-800 dark:text-white">React / Next.js</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Tailwind CSS -->
+          <div data-animate-child class="glass-card p-5 skill-bar-container cursor-pointer" data-skill="tailwind">
+            <div class="flex items-center gap-3 mb-3">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-8 h-8 object-contain">
+              <div class="flex-1 min-w-0">
+                <h4 class="font-semibold font-mono text-sm text-gray-800 dark:text-white">Tailwind CSS</h4>
+              </div>
+            </div>
           </div>
         </div>
-
-        <!-- CSS -->
-        <div data-animate-child class="glass-card p-6 skill-bar-container">
-          <div class="flex items-center gap-4 mb-4">
-            <img src="./img/css-logo.png" alt="CSS" class="icon-direct">
-            <div>
-              <h3 class="font-bold font-mono text-gray-800 dark:text-white">CSS</h3>
-              <p class="text-xs text-gray-500 dark:text-slate-400">Styling Language</p>
-            </div>
-            <span class="ml-auto font-mono text-sm text-neon-cyan">75%</span>
-          </div>
-          <div class="w-full h-2 bg-gray-200 dark:bg-white/10 rounded-full overflow-hidden">
-            <div class="skill-fill h-full rounded-full" data-width="75%"></div>
-          </div>
-        </div>
-
-        <!-- JavaScript -->
-        <div data-animate-child class="glass-card p-6 skill-bar-container">
-          <div class="flex items-center gap-4 mb-4">
-            <img src="./img/js-logo.png" alt="JavaScript" class="icon-direct">
-            <div>
-              <h3 class="font-bold font-mono text-gray-800 dark:text-white">JavaScript</h3>
-              <p class="text-xs text-gray-500 dark:text-slate-400">Programming Language</p>
-            </div>
-            <span class="ml-auto font-mono text-sm text-neon-cyan">65%</span>
-          </div>
-          <div class="w-full h-2 bg-gray-200 dark:bg-white/10 rounded-full overflow-hidden">
-            <div class="skill-fill h-full rounded-full" data-width="65%"></div>
-          </div>
-        </div>
-
-        <!-- PHP -->
-        <div data-animate-child class="glass-card p-6 skill-bar-container">
-          <div class="flex items-center gap-4 mb-4">
-            <img src="./img/php-1-logo-png-transparent.png" alt="PHP" class="icon-direct">
-            <div>
-              <h3 class="font-bold font-mono text-gray-800 dark:text-white">PHP</h3>
-              <p class="text-xs text-gray-500 dark:text-slate-400">Backend Language</p>
-            </div>
-            <span class="ml-auto font-mono text-sm text-neon-cyan">45%</span>
-          </div>
-          <div class="w-full h-2 bg-gray-200 dark:bg-white/10 rounded-full overflow-hidden">
-            <div class="skill-fill h-full rounded-full" data-width="45%"></div>
-          </div>
-        </div>
-
-        <!-- SQL -->
-        <div data-animate-child class="glass-card p-6 skill-bar-container">
-          <div class="flex items-center gap-4 mb-4">
-            <img src="./img/mysql-icon.png" alt="SQL" class="icon-direct">
-            <div>
-              <h3 class="font-bold font-mono text-gray-800 dark:text-white">SQL</h3>
-              <p class="text-xs text-gray-500 dark:text-slate-400">Database Language</p>
-            </div>
-            <span class="ml-auto font-mono text-sm text-neon-cyan">40%</span>
-          </div>
-          <div class="w-full h-2 bg-gray-200 dark:bg-white/10 rounded-full overflow-hidden">
-            <div class="skill-fill h-full rounded-full" data-width="40%"></div>
-          </div>
-        </div>
-
-        <!-- Java -->
-        <div data-animate-child class="glass-card p-6 skill-bar-container">
-          <div class="flex items-center gap-4 mb-4">
-            <img src="./img/java-logo.png" alt="Java" class="icon-direct">
-            <div>
-              <h3 class="font-bold font-mono text-gray-800 dark:text-white">Java</h3>
-              <p class="text-xs text-gray-500 dark:text-slate-400">Programming Language</p>
-            </div>
-            <span class="ml-auto font-mono text-sm text-neon-cyan">35%</span>
-          </div>
-          <div class="w-full h-2 bg-gray-200 dark:bg-white/10 rounded-full overflow-hidden">
-            <div class="skill-fill h-full rounded-full" data-width="35%"></div>
-          </div>
-        </div>
-
       </div>
+
+      <!-- Backend & Database -->
+      <div data-animate class="mb-12">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-8 h-8 rounded-lg bg-neon-purple/10 border border-neon-purple/20 flex items-center justify-center">
+            <i class="fa-solid fa-server text-neon-purple text-sm"></i>
+          </div>
+          <h3 class="text-lg font-bold font-mono text-gray-800 dark:text-white" data-i18n="skillsBackend">Backend & Database</h3>
+          <div class="flex-1 h-px bg-gradient-to-r from-neon-purple/20 to-transparent"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- PHP -->
+          <div data-animate-child class="glass-card p-5 skill-bar-container cursor-pointer" data-skill="php">
+            <div class="flex items-center gap-3 mb-3">
+              <img src="./img/php-1-logo-png-transparent.png" alt="PHP" class="w-8 h-8 object-contain">
+              <div class="flex-1 min-w-0">
+                <h4 class="font-semibold font-mono text-sm text-gray-800 dark:text-white">PHP</h4>
+              </div>
+            </div>
+          </div>
+          <!-- MySQL -->
+          <div data-animate-child class="glass-card p-5 skill-bar-container cursor-pointer" data-skill="mysql">
+            <div class="flex items-center gap-3 mb-3">
+              <img src="./img/mysql-icon.png" alt="MySQL" class="w-8 h-8 object-contain">
+              <div class="flex-1 min-w-0">
+                <h4 class="font-semibold font-mono text-sm text-gray-800 dark:text-white">MySQL</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Prisma -->
+          <div data-animate-child class="glass-card p-5 skill-bar-container cursor-pointer" data-skill="prisma">
+            <div class="flex items-center gap-3 mb-3">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" alt="Prisma" class="w-8 h-8 object-contain dark:invert">
+              <div class="flex-1 min-w-0">
+                <h4 class="font-semibold font-mono text-sm text-gray-800 dark:text-white">Prisma ORM</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Java -->
+          <div data-animate-child class="glass-card p-5 skill-bar-container cursor-pointer" data-skill="java">
+            <div class="flex items-center gap-3 mb-3">
+              <img src="./img/java-logo.png" alt="Java" class="w-8 h-8 object-contain">
+              <div class="flex-1 min-w-0">
+                <h4 class="font-semibold font-mono text-sm text-gray-800 dark:text-white">Java</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Symfony -->
+          <div data-animate-child class="glass-card p-5 skill-bar-container cursor-pointer" data-skill="symfony">
+            <div class="flex items-center gap-3 mb-3">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/symfony/symfony-original.svg" alt="Symfony" class="w-8 h-8 object-contain dark:invert">
+              <div class="flex-1 min-w-0">
+                <h4 class="font-semibold font-mono text-sm text-gray-800 dark:text-white">Symfony</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools & Methods -->
+      <div data-animate>
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-8 h-8 rounded-lg bg-green-500/10 border border-green-500/20 flex items-center justify-center">
+            <i class="fa-solid fa-wrench text-green-400 text-sm"></i>
+          </div>
+          <h3 class="text-lg font-bold font-mono text-gray-800 dark:text-white" data-i18n="skillsTools">Tools & Methods</h3>
+          <div class="flex-1 h-px bg-gradient-to-r from-green-400/20 to-transparent"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- Git / GitHub -->
+          <div data-animate-child class="glass-card p-5 skill-bar-container cursor-pointer" data-skill="git">
+            <div class="flex items-center gap-3 mb-3">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" class="w-8 h-8 object-contain">
+              <div class="flex-1 min-w-0">
+                <h4 class="font-semibold font-mono text-sm text-gray-800 dark:text-white">Git / GitHub</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Agile / Scrum -->
+          <div data-animate-child class="glass-card p-5 skill-bar-container cursor-pointer" data-skill="agile">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center">
+                <i class="fa-solid fa-users text-blue-400 text-sm"></i>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h4 class="font-semibold font-mono text-sm text-gray-800 dark:text-white">Agile / Scrum</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Linux -->
+          <div data-animate-child class="glass-card p-5 skill-bar-container cursor-pointer" data-skill="linux">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-8 h-8 rounded-lg bg-yellow-500/10 flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" class="w-5 h-5">
+              </div>
+              <div class="flex-1 min-w-0">
+                <h4 class="font-semibold font-mono text-sm text-gray-800 dark:text-white">Linux</h4>
+              </div>
+            </div>
+          </div>
+          <!-- AI -->
+          <div data-animate-child class="glass-card p-5 skill-bar-container cursor-pointer" data-skill="ai">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center">
+                <i class="fa-solid fa-brain text-purple-400 text-sm"></i>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h4 class="font-semibold font-mono text-sm text-gray-800 dark:text-white">AI / Prompt Engineering</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -365,7 +460,7 @@
               <h3 class="font-bold font-mono text-lg text-gray-800 dark:text-white" data-i18n="acadROC">ROC Mondriaan</h3>
               <p class="text-sm text-gray-500 dark:text-slate-400 mt-2" data-i18n="acadROCDesc">MBO4 Software Developer — Currently learning professional software development, building real-world projects and growing as a developer.</p>
               <p class="text-xs font-mono text-neon-cyan mt-3" data-i18n="acadROCYear">2024 — Present</p>
-              <span class="inline-block mt-2 text-xs font-mono px-3 py-1 rounded-full bg-neon-cyan/10 text-neon-cyan border border-neon-cyan/30">Current</span>
+              <span class="inline-block mt-2 text-xs font-mono px-3 py-1 rounded-full bg-neon-cyan/10 text-neon-cyan border border-neon-cyan/30" data-i18n="acadCurrent">Current</span>
             </div>
           </div>
           <div class="absolute left-4 md:left-1/2 w-4 h-4 timeline-dot rounded-full -translate-x-1/2 mt-8 z-10"></div>
@@ -385,76 +480,144 @@
 
       <div data-animate class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold font-mono gradient-text inline-block mb-4" data-i18n="projectsTitle">My Projects</h2>
-        <p class="text-gray-500 dark:text-slate-400" data-i18n="projectsSubtitle">Things I've built</p>
+        <p class="text-gray-500 dark:text-slate-400 max-w-2xl mx-auto" data-i18n="projectsSubtitle">From first lines of code to full-stack applications — my development journey</p>
       </div>
 
       <div data-animate class="grid md:grid-cols-2 gap-8">
 
         <!-- Project 1 — Hoger Lager -->
-        <div data-animate-child class="project-card glass-card overflow-hidden group">
-          <div class="overflow-hidden">
-            <img src="./img/hoger-lager-img.png" alt="Hoger Lager" class="project-img w-full h-48 object-cover" loading="lazy">
+        <div data-animate-child class="project-card glass-card overflow-hidden group cursor-pointer" data-project="hogerlager">
+          <div class="relative overflow-hidden h-48 bg-gradient-to-br from-amber-900 to-orange-700 flex items-center justify-center">
+            <i class="fa-solid fa-dice text-6xl text-orange-300/30"></i>
+            <span class="absolute top-3 left-3 text-xs font-mono px-2.5 py-1 rounded-full bg-neon-purple/20 text-neon-purple border border-neon-purple/30 backdrop-blur-sm" data-i18n="projBadgeSchool">School Project</span>
+            <span class="absolute top-3 right-3 text-xs font-mono px-2.5 py-1 rounded-full bg-green-500/20 text-green-400 border border-green-500/30 backdrop-blur-sm" data-i18n="projBadgeCompleted">Completed</span>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-bold font-mono text-gray-800 dark:text-white mb-3" data-i18n="projHogerLager">Hoger Lager</h3>
-            <p class="text-sm text-gray-600 dark:text-slate-400 mb-4 leading-relaxed" data-i18n="projHogerLagerDesc">
-              A classic higher-lower dice game where players guess whether the next roll will be higher or lower. Built with vanilla JavaScript for interactive gameplay.
-            </p>
-            <div class="flex items-center gap-2 mb-5">
-              <img src="./img/html-logo.png" alt="HTML" class="icon-direct">
-              <img src="./img/css-logo.png" alt="CSS" class="icon-direct">
-              <img src="./img/js-logo.png" alt="JavaScript" class="icon-direct">
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="text-xl font-bold font-mono text-gray-800 dark:text-white" data-i18n="projHogerLager">Hoger Lager</h3>
+              <span class="text-xs font-mono text-gray-400 dark:text-slate-500">2024</span>
             </div>
-            <a href="https://github.com/ROCMondriaanTIN/st-sd-project-p01-hogerlager-NadirKhoulali" target="_blank" class="inline-flex items-center gap-2 text-sm font-mono text-neon-cyan hover:underline">
-              <i class="fa-brands fa-github"></i>
-              <span data-i18n="projViewGithub">View on GitHub</span>
-              <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-            </a>
+            <p class="text-xs font-mono text-neon-cyan mb-3" data-i18n="projHogerLagerPeriod">Period 1 — First Project</p>
+            <p class="text-sm text-gray-600 dark:text-slate-400 mb-4 leading-relaxed" data-i18n="projHogerLagerDesc">
+              A classic higher-lower dice game where players guess whether the next roll will be higher or lower. My first real programming project, built with vanilla JavaScript.
+            </p>
+            <div class="flex items-center gap-2 mb-5 flex-wrap">
+              <img src="./img/html-logo.png" alt="HTML" class="icon-direct" title="HTML">
+              <img src="./img/css-logo.png" alt="CSS" class="icon-direct" title="CSS">
+              <img src="./img/js-logo.png" alt="JavaScript" class="icon-direct" title="JavaScript">
+            </div>
+            <span class="inline-flex items-center gap-2 text-sm font-mono text-slate-400">
+              <i class="fa-solid fa-lock text-xs"></i>
+              <span data-i18n="projPrivateRepo">Private Repository</span>
+            </span>
           </div>
         </div>
 
         <!-- Project 2 — Whack a Mole -->
-        <div data-animate-child class="project-card glass-card overflow-hidden group">
-          <div class="overflow-hidden">
-            <img src="./img/whack-a-mole-img.png" alt="Whack a Mole" class="project-img w-full h-48 object-cover" loading="lazy">
+        <div data-animate-child class="project-card glass-card overflow-hidden group cursor-pointer" data-project="whackamole">
+          <div class="relative overflow-hidden h-48 bg-gradient-to-br from-purple-900 to-fuchsia-700 flex items-center justify-center">
+            <i class="fa-solid fa-gamepad text-6xl text-fuchsia-300/30"></i>
+            <span class="absolute top-3 left-3 text-xs font-mono px-2.5 py-1 rounded-full bg-neon-purple/20 text-neon-purple border border-neon-purple/30 backdrop-blur-sm" data-i18n="projBadgeSchool">School Project</span>
+            <span class="absolute top-3 right-3 text-xs font-mono px-2.5 py-1 rounded-full bg-green-500/20 text-green-400 border border-green-500/30 backdrop-blur-sm" data-i18n="projBadgeCompleted">Completed</span>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-bold font-mono text-gray-800 dark:text-white mb-3" data-i18n="projWhackAMole">Whack a Mole</h3>
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="text-xl font-bold font-mono text-gray-800 dark:text-white" data-i18n="projWhackAMole">Whack a Mole</h3>
+              <span class="text-xs font-mono text-gray-400 dark:text-slate-500">2024</span>
+            </div>
+            <p class="text-xs font-mono text-neon-cyan mb-3" data-i18n="projWhackAMolePeriod">Period 2 — Game Development</p>
             <p class="text-sm text-gray-600 dark:text-slate-400 mb-4 leading-relaxed" data-i18n="projWhackAMoleDesc">
               A fun reaction-speed game where you whack moles as they pop up. Features score tracking and increasing difficulty levels.
             </p>
-            <div class="flex items-center gap-2 mb-5">
-              <img src="./img/html-logo.png" alt="HTML" class="icon-direct">
-              <img src="./img/css-logo.png" alt="CSS" class="icon-direct">
-              <img src="./img/js-logo.png" alt="JavaScript" class="icon-direct">
+            <div class="flex items-center gap-2 mb-5 flex-wrap">
+              <img src="./img/html-logo.png" alt="HTML" class="icon-direct" title="HTML">
+              <img src="./img/css-logo.png" alt="CSS" class="icon-direct" title="CSS">
+              <img src="./img/js-logo.png" alt="JavaScript" class="icon-direct" title="JavaScript">
             </div>
-            <a href="https://github.com/ROCMondriaanTIN/st-sd-p02-project-build-a-game-oreo" target="_blank" class="inline-flex items-center gap-2 text-sm font-mono text-neon-cyan hover:underline">
-              <i class="fa-brands fa-github"></i>
-              <span data-i18n="projViewGithub">View on GitHub</span>
-              <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-            </a>
+            <span class="inline-flex items-center gap-2 text-sm font-mono text-slate-400">
+              <i class="fa-solid fa-lock text-xs"></i>
+              <span data-i18n="projPrivateRepo">Private Repository</span>
+            </span>
           </div>
         </div>
 
         <!-- Project 3 — Review Your Experience -->
-        <div data-animate-child class="project-card glass-card overflow-hidden group">
-          <div class="overflow-hidden">
-            <img src="./img/review-your-experience.png" alt="Review Your Experience" class="project-img w-full h-48 object-cover" loading="lazy">
+        <div data-animate-child class="project-card glass-card overflow-hidden group cursor-pointer" data-project="review">
+          <div class="relative overflow-hidden h-48 bg-gradient-to-br from-indigo-900 to-blue-700 flex items-center justify-center">
+            <i class="fa-solid fa-star-half-stroke text-6xl text-blue-300/30"></i>
+            <span class="absolute top-3 left-3 text-xs font-mono px-2.5 py-1 rounded-full bg-neon-purple/20 text-neon-purple border border-neon-purple/30 backdrop-blur-sm" data-i18n="projBadgeSchool">School Project</span>
+            <span class="absolute top-3 right-3 text-xs font-mono px-2.5 py-1 rounded-full bg-green-500/20 text-green-400 border border-green-500/30 backdrop-blur-sm" data-i18n="projBadgeCompleted">Completed</span>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-bold font-mono text-gray-800 dark:text-white mb-3" data-i18n="projReview">Review Your Experience</h3>
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="text-xl font-bold font-mono text-gray-800 dark:text-white" data-i18n="projReview">Review Your Experience — Game Heaven</h3>
+              <span class="text-xs font-mono text-gray-400 dark:text-slate-500">2025</span>
+            </div>
+            <p class="text-xs font-mono text-neon-cyan mb-3" data-i18n="projReviewPeriod">Period 3 — Full-Stack Development</p>
             <p class="text-sm text-gray-600 dark:text-slate-400 mb-4 leading-relaxed" data-i18n="projReviewDesc">
               A full-stack game catalog and review platform. Users can browse games, write reviews, and rate their experiences. Built with PHP and MySQL backend.
             </p>
-            <div class="flex items-center gap-2 mb-5">
-              <img src="./img/html-logo.png" alt="HTML" class="icon-direct">
-              <img src="./img/css-logo.png" alt="CSS" class="icon-direct">
-              <img src="./img/js-logo.png" alt="JavaScript" class="icon-direct">
-              <img src="./img/php-1-logo-png-transparent.png" alt="PHP" class="icon-direct">
-              <img src="./img/mysql-icon.png" alt="MySQL" class="icon-direct">
-              <img src="./img/Bootstrap_logo.svg.png" alt="Bootstrap" class="icon-direct">
+            <div class="flex items-center gap-2 mb-5 flex-wrap">
+              <img src="./img/html-logo.png" alt="HTML" class="icon-direct" title="HTML">
+              <img src="./img/css-logo.png" alt="CSS" class="icon-direct" title="CSS">
+              <img src="./img/js-logo.png" alt="JavaScript" class="icon-direct" title="JavaScript">
+              <img src="./img/php-1-logo-png-transparent.png" alt="PHP" class="icon-direct" title="PHP">
+              <img src="./img/mysql-icon.png" alt="MySQL" class="icon-direct" title="MySQL">
+              <img src="./img/Bootstrap_logo.svg.png" alt="Bootstrap" class="icon-direct" title="Bootstrap">
             </div>
-            <a href="https://github.com/ROCMondriaanTIN/sd24-project-p03-review-your-experience-gameheaven" target="_blank" class="inline-flex items-center gap-2 text-sm font-mono text-neon-cyan hover:underline">
+            <span class="inline-flex items-center gap-2 text-sm font-mono text-slate-400">
+              <i class="fa-solid fa-lock text-xs"></i>
+              <span data-i18n="projPrivateRepo">Private Repository</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 4 — Greenfoot Roodkapje -->
+        <div data-animate-child class="project-card glass-card overflow-hidden group cursor-pointer" data-project="greenfoot">
+          <div class="relative overflow-hidden h-48 bg-gradient-to-br from-green-900 to-lime-700 flex items-center justify-center">
+            <i class="fa-solid fa-tree text-6xl text-lime-300/30"></i>
+            <span class="absolute top-3 left-3 text-xs font-mono px-2.5 py-1 rounded-full bg-neon-purple/20 text-neon-purple border border-neon-purple/30 backdrop-blur-sm" data-i18n="projBadgeSchool">School Project</span>
+            <span class="absolute top-3 right-3 text-xs font-mono px-2.5 py-1 rounded-full bg-green-500/20 text-green-400 border border-green-500/30 backdrop-blur-sm" data-i18n="projBadgeCompleted">Completed</span>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="text-xl font-bold font-mono text-gray-800 dark:text-white" data-i18n="projGreenfoot">Greenfoot Roodkapje</h3>
+              <span class="text-xs font-mono text-gray-400 dark:text-slate-500">2025</span>
+            </div>
+            <p class="text-xs font-mono text-neon-cyan mb-3" data-i18n="projGreenfootPeriod">Period 4 — Java Development</p>
+            <p class="text-sm text-gray-600 dark:text-slate-400 mb-4 leading-relaxed" data-i18n="projGreenfootDesc">
+              A Little Red Riding Hood adventure game built in Java using the Greenfoot framework. Features character movement, collision detection, and game logic.
+            </p>
+            <div class="flex items-center gap-2 mb-5 flex-wrap">
+              <img src="./img/java-logo.png" alt="Java" class="icon-direct" title="Java">
+            </div>
+            <span class="inline-flex items-center gap-2 text-sm font-mono text-slate-400">
+              <i class="fa-solid fa-lock text-xs"></i>
+              <span data-i18n="projPrivateRepo">Private Repository</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 5 — BetterLeaderboards MC -->
+        <div data-animate-child class="project-card glass-card overflow-hidden group cursor-pointer" data-project="leaderboards">
+          <div class="relative overflow-hidden h-48 bg-gradient-to-br from-emerald-900 to-green-700 flex items-center justify-center">
+            <i class="fa-solid fa-trophy text-6xl text-green-300/30"></i>
+            <span class="absolute top-3 left-3 text-xs font-mono px-2.5 py-1 rounded-full bg-neon-cyan/20 text-neon-cyan border border-neon-cyan/30 backdrop-blur-sm" data-i18n="projBadgePersonal">Personal Project</span>
+            <span class="absolute top-3 right-3 text-xs font-mono px-2.5 py-1 rounded-full bg-green-500/20 text-green-400 border border-green-500/30 backdrop-blur-sm" data-i18n="projBadgeCompleted">Completed</span>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="text-xl font-bold font-mono text-gray-800 dark:text-white" data-i18n="projBetterLeaderboards">BetterLeaderboards MC</h3>
+              <span class="text-xs font-mono text-gray-400 dark:text-slate-500">2025</span>
+            </div>
+            <p class="text-xs font-mono text-neon-cyan mb-3" data-i18n="projBetterLeaderboardsPeriod">Personal — Minecraft Modding</p>
+            <p class="text-sm text-gray-600 dark:text-slate-400 mb-4 leading-relaxed" data-i18n="projBetterLeaderboardsDesc">
+              A Minecraft Forge mod for creating customizable holographic leaderboards. Features player stat tracking, medal colors for top 3 players, multiple stat types (kills, deaths, K/D, playtime), auto-refresh, and persistent data storage.
+            </p>
+            <div class="flex items-center gap-2 mb-5 flex-wrap">
+              <img src="./img/java-logo.png" alt="Java" class="icon-direct" title="Java">
+            </div>
+            <a href="https://github.com/NadirKhoulali/BetterLeaderboards-MC" target="_blank" class="inline-flex items-center gap-2 text-sm font-mono text-neon-cyan hover:underline">
               <i class="fa-brands fa-github"></i>
               <span data-i18n="projViewGithub">View on GitHub</span>
               <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
@@ -462,24 +625,66 @@
           </div>
         </div>
 
-        <!-- Project 4 — Greenfoot Roodkapje -->
-        <div data-animate-child class="project-card glass-card overflow-hidden group">
-          <div class="overflow-hidden">
-            <img src="./img/little_red_logo.png" alt="Greenfoot Roodkapje" class="project-img w-full h-48 object-cover" loading="lazy">
+        <!-- Project 6 — SDG Dashboard -->
+        <div data-animate-child class="project-card glass-card overflow-hidden group cursor-pointer" data-project="sdg">
+          <div class="relative overflow-hidden h-48 bg-gradient-to-br from-blue-900 to-cyan-700 flex items-center justify-center">
+            <i class="fa-solid fa-chart-line text-6xl text-cyan-300/30"></i>
+            <span class="absolute top-3 left-3 text-xs font-mono px-2.5 py-1 rounded-full bg-neon-purple/20 text-neon-purple border border-neon-purple/30 backdrop-blur-sm" data-i18n="projBadgeSchool">School Project</span>
+            <span class="absolute top-3 right-3 text-xs font-mono px-2.5 py-1 rounded-full bg-green-500/20 text-green-400 border border-green-500/30 backdrop-blur-sm" data-i18n="projBadgeCompleted">Completed</span>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-bold font-mono text-gray-800 dark:text-white mb-3" data-i18n="projGreenfoot">Greenfoot Roodkapje</h3>
-            <p class="text-sm text-gray-600 dark:text-slate-400 mb-4 leading-relaxed" data-i18n="projGreenfootDesc">
-              A Little Red Riding Hood adventure game built in Java using the Greenfoot framework. Features character movement, collision detection, and game logic.
-            </p>
-            <div class="flex items-center gap-2 mb-5">
-              <img src="./img/java-logo.png" alt="Java" class="icon-direct">
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="text-xl font-bold font-mono text-gray-800 dark:text-white" data-i18n="projSDGDashboard">SDG Dashboard</h3>
+              <span class="text-xs font-mono text-gray-400 dark:text-slate-500">2026</span>
             </div>
-            <a href="https://github.com/NadirKhoulali/Greenfoot-Project-Little-Red-Rood-Kapje-" target="_blank" class="inline-flex items-center gap-2 text-sm font-mono text-neon-cyan hover:underline">
-              <i class="fa-brands fa-github"></i>
-              <span data-i18n="projViewGithub">View on GitHub</span>
-              <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-            </a>
+            <p class="text-xs font-mono text-neon-cyan mb-3" data-i18n="projSDGDashboardPeriod">Period 6 — Advanced Web Development</p>
+            <p class="text-sm text-gray-600 dark:text-slate-400 mb-4 leading-relaxed" data-i18n="projSDGDashboardDesc">
+              An interactive full-stack web application for tracking and visualizing the UN Sustainable Development Goals. Features data visualization with Chart.js, user authentication, Prisma ORM with MySQL, and RESTful API endpoints.
+            </p>
+            <div class="flex items-center gap-2 mb-5 flex-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" class="icon-direct dark:invert" title="Next.js">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" class="icon-direct" title="React">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" class="icon-direct" title="TypeScript">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="icon-direct" title="Tailwind CSS">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" alt="Prisma" class="icon-direct dark:invert" title="Prisma">
+              <img src="./img/mysql-icon.png" alt="MySQL" class="icon-direct" title="MySQL">
+            </div>
+            <span class="inline-flex items-center gap-2 text-sm font-mono text-slate-400">
+              <i class="fa-solid fa-lock text-xs"></i>
+              <span data-i18n="projPrivateRepo">Private Repository</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 7 — L'Impérial (Coming Soon) -->
+        <div data-animate-child class="project-card glass-card overflow-hidden group md:col-span-2 cursor-pointer" data-project="imperial">
+          <div class="relative overflow-hidden h-48 bg-gradient-to-br from-gray-800 to-gray-700 flex items-center justify-center border-b border-dashed border-white/10">
+            <div class="text-center">
+              <i class="fa-solid fa-rocket text-5xl text-neon-cyan/20 mb-3"></i>
+              <p class="text-sm font-mono text-white/30" data-i18n="projComingSoon">Coming Soon</p>
+            </div>
+            <span class="absolute top-3 left-3 text-xs font-mono px-2.5 py-1 rounded-full bg-neon-purple/20 text-neon-purple border border-neon-purple/30 backdrop-blur-sm" data-i18n="projBadgeSchool">School Project</span>
+            <span class="absolute top-3 right-3 text-xs font-mono px-2.5 py-1 rounded-full bg-yellow-500/20 text-yellow-400 border border-yellow-500/30 backdrop-blur-sm" data-i18n="projBadgeInProgress">In Progress</span>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="text-xl font-bold font-mono text-gray-800 dark:text-white" data-i18n="projShowYourSkills">L'Impérial</h3>
+              <span class="text-xs font-mono text-gray-400 dark:text-slate-500">2026</span>
+            </div>
+            <p class="text-xs font-mono text-neon-cyan mb-3" data-i18n="projShowYourSkillsPeriod">Period 7 — Current Project</p>
+            <p class="text-sm text-gray-600 dark:text-slate-400 mb-4 leading-relaxed" data-i18n="projShowYourSkillsDesc">
+              A new project currently in development using the Next.js framework. More details coming soon as the project takes shape.
+            </p>
+            <div class="flex items-center gap-2 mb-5 flex-wrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" class="icon-direct dark:invert" title="Next.js">
+            </div>
+            <span class="inline-flex items-center gap-2 text-sm font-mono text-yellow-400">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-yellow-500"></span>
+              </span>
+              <span data-i18n="projInDevelopment">Currently in development</span>
+            </span>
           </div>
         </div>
 
@@ -502,15 +707,15 @@
 
       <div data-animate class="grid md:grid-cols-3 gap-6">
 
-        <!-- Testimonial 1 -->
-        <div data-animate-child class="glass-card p-6 border-t-2 border-t-neon-cyan">
+        <!-- Testimonial 1 — Teacher -->
+        <div data-animate-child class="glass-card p-8 border-t-2 border-t-neon-cyan">
           <div class="quote-mark mb-2">&ldquo;</div>
           <p class="text-sm text-gray-600 dark:text-slate-400 leading-relaxed mb-6" data-i18n="testimonial1Quote">
             Nadir is a dedicated student who always goes the extra mile. His enthusiasm for coding is contagious and he's a great team player.
           </p>
           <div class="flex items-center gap-3">
             <div class="w-10 h-10 rounded-full bg-gradient-to-br from-neon-cyan to-neon-purple flex items-center justify-center text-white font-bold text-sm">
-              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-chalkboard-user"></i>
             </div>
             <div>
               <p class="font-semibold text-sm text-gray-800 dark:text-white" data-i18n="testimonial1Name">Teacher</p>
@@ -519,15 +724,15 @@
           </div>
         </div>
 
-        <!-- Testimonial 2 -->
-        <div data-animate-child class="glass-card p-6 border-t-2 border-t-neon-purple">
+        <!-- Testimonial 2 — Classmate -->
+        <div data-animate-child class="glass-card p-8 border-t-2 border-t-neon-purple">
           <div class="quote-mark mb-2">&ldquo;</div>
           <p class="text-sm text-gray-600 dark:text-slate-400 leading-relaxed mb-6" data-i18n="testimonial2Quote">
             Working with Nadir on group projects was always a pleasure. He brings creative solutions to the table and is always willing to help others.
           </p>
           <div class="flex items-center gap-3">
             <div class="w-10 h-10 rounded-full bg-gradient-to-br from-neon-purple to-neon-cyan flex items-center justify-center text-white font-bold text-sm">
-              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-group"></i>
             </div>
             <div>
               <p class="font-semibold text-sm text-gray-800 dark:text-white" data-i18n="testimonial2Name">Classmate</p>
@@ -536,21 +741,17 @@
           </div>
         </div>
 
-        <!-- Testimonial 3 -->
-        <div data-animate-child class="glass-card p-6 border-t-2 border-t-neon-cyan">
-          <div class="quote-mark mb-2">&ldquo;</div>
-          <p class="text-sm text-gray-600 dark:text-slate-400 leading-relaxed mb-6" data-i18n="testimonial3Quote">
-            Nadir showed great initiative and problem-solving skills. He quickly adapted to new technologies and delivered quality work consistently.
-          </p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-neon-cyan to-neon-purple flex items-center justify-center text-white font-bold text-sm">
-              <i class="fa-solid fa-user"></i>
-            </div>
-            <div>
-              <p class="font-semibold text-sm text-gray-800 dark:text-white" data-i18n="testimonial3Name">Project Supervisor</p>
-              <p class="text-xs text-gray-500 dark:text-slate-400" data-i18n="testimonial3Role">Internship</p>
-            </div>
+        <!-- CTA Card — Your Testimonial -->
+        <div data-animate-child class="glass-card p-8 border-t-2 border-t-green-400 flex flex-col items-center justify-center text-center border-dashed border-white/10">
+          <div class="w-16 h-16 rounded-full bg-gradient-to-br from-green-400 to-neon-cyan flex items-center justify-center text-white text-2xl mb-4">
+            <i class="fa-solid fa-plus"></i>
           </div>
+          <h3 class="font-bold font-mono text-gray-800 dark:text-white mb-2" data-i18n="testimonialCTATitle">Your Review Here?</h3>
+          <p class="text-sm text-gray-500 dark:text-slate-400 mb-5 leading-relaxed" data-i18n="testimonialCTADesc">Worked with me or want to collaborate? I'd love to hear from you!</p>
+          <a href="#contact" class="inline-flex items-center gap-2 text-sm font-mono px-4 py-2 rounded-full bg-neon-cyan/10 text-neon-cyan border border-neon-cyan/30 hover:bg-neon-cyan/20 transition-colors">
+            <i class="fa-solid fa-envelope text-xs"></i>
+            <span data-i18n="testimonialCTAButton">Get in Touch</span>
+          </a>
         </div>
 
       </div>
@@ -573,27 +774,27 @@
       <div data-animate class="grid sm:grid-cols-3 gap-6 mb-16">
 
         <!-- Email -->
-        <div class="glass-card p-6 text-center">
+        <div class="glass-card p-6 text-center overflow-hidden">
           <i class="fa-solid fa-envelope text-2xl text-neon-cyan mb-4"></i>
           <h3 class="font-bold font-mono text-sm text-gray-800 dark:text-white mb-2" data-i18n="contactEmail">Email</h3>
-          <button data-copy="302576083@student.rocmondriaan.nl" class="text-sm text-gray-500 dark:text-slate-400 hover:text-neon-cyan transition-colors inline-flex items-center gap-2">
-            <span>302576083@student.rocmondriaan.nl</span>
-            <i class="fa-regular fa-copy text-xs"></i>
+          <button data-copy="n_khoulali@outlook.com" class="text-sm text-gray-500 dark:text-slate-400 hover:text-neon-cyan transition-colors inline-flex items-center gap-2 max-w-full">
+            <span class="truncate">n_khoulali@outlook.com</span>
+            <i class="fa-regular fa-copy text-xs flex-shrink-0"></i>
           </button>
         </div>
 
         <!-- Phone -->
-        <div class="glass-card p-6 text-center">
+        <div class="glass-card p-6 text-center overflow-hidden">
           <i class="fa-solid fa-phone text-2xl text-neon-cyan mb-4"></i>
           <h3 class="font-bold font-mono text-sm text-gray-800 dark:text-white mb-2" data-i18n="contactPhone">Phone</h3>
-          <button data-copy="+31 6 123456789" class="text-sm text-gray-500 dark:text-slate-400 hover:text-neon-cyan transition-colors inline-flex items-center gap-2">
-            <span>+31 6 123456789</span>
-            <i class="fa-regular fa-copy text-xs"></i>
+          <button data-copy="+31 6 87400612" class="text-sm text-gray-500 dark:text-slate-400 hover:text-neon-cyan transition-colors inline-flex items-center gap-2 max-w-full">
+            <span class="truncate">+31 6 87400612</span>
+            <i class="fa-regular fa-copy text-xs flex-shrink-0"></i>
           </button>
         </div>
 
         <!-- Address -->
-        <div class="glass-card p-6 text-center">
+        <div class="glass-card p-6 text-center overflow-hidden">
           <i class="fa-solid fa-location-dot text-2xl text-neon-cyan mb-4"></i>
           <h3 class="font-bold font-mono text-sm text-gray-800 dark:text-white mb-2" data-i18n="contactAddress">Address</h3>
           <p class="text-sm text-gray-500 dark:text-slate-400" data-i18n="contactAddressValue">The Hague, Netherlands</p>
@@ -602,20 +803,14 @@
 
       <!-- Social Links -->
       <div data-animate class="flex justify-center gap-6 mb-16">
-        <a href="https://instagram.com/NadirKhoulali" target="_blank" class="social-icon text-2xl text-gray-400 dark:text-slate-500" aria-label="Instagram">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://twitter.com/Nadir_Khoulali" target="_blank" class="social-icon text-2xl text-gray-400 dark:text-slate-500" aria-label="Twitter">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-        <a href="https://facebook.com/NadirKhoulali01" target="_blank" class="social-icon text-2xl text-gray-400 dark:text-slate-500" aria-label="Facebook">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
         <a href="https://linkedin.com/in/nadir-khoulali" target="_blank" class="social-icon text-2xl text-gray-400 dark:text-slate-500" aria-label="LinkedIn">
           <i class="fa-brands fa-linkedin"></i>
         </a>
         <a href="https://github.com/NadirKhoulali" target="_blank" class="social-icon text-2xl text-gray-400 dark:text-slate-500" aria-label="GitHub">
           <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="mailto:n_khoulali@outlook.com" class="social-icon text-2xl text-gray-400 dark:text-slate-500" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
         </a>
       </div>
     </div>
@@ -631,6 +826,89 @@
     </div>
   </footer>
 
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PROJECT MODAL
+       ═══════════════════════════════════════════════════════════ -->
+  <div id="projectModal" class="skill-modal-backdrop hidden" aria-hidden="true">
+    <div class="skill-modal-content glass-card p-0 max-w-2xl w-full mx-4 relative overflow-hidden max-h-[90vh] overflow-y-auto">
+      <button id="projectModalClose" class="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-black/40 backdrop-blur-sm text-white/80 hover:text-white hover:bg-black/60 transition-colors flex items-center justify-center text-sm" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <!-- Header with gradient -->
+      <div id="projectModalHeader" class="relative h-48 flex items-center justify-center">
+        <i id="projectModalIcon" class="text-7xl opacity-30"></i>
+        <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <div class="absolute bottom-4 left-6 right-6">
+          <h3 id="projectModalTitle" class="text-2xl font-bold font-mono text-white drop-shadow-lg"></h3>
+        </div>
+      </div>
+      <!-- Content -->
+      <div class="p-6 md:p-8">
+        <!-- Meta row: badges + year -->
+        <div class="flex items-center gap-2 flex-wrap mb-4">
+          <span id="projectModalType" class="text-xs font-mono px-2.5 py-1 rounded-full"></span>
+          <span id="projectModalStatus" class="text-xs font-mono px-2.5 py-1 rounded-full"></span>
+          <span id="projectModalPeriod" class="text-xs font-mono text-neon-cyan"></span>
+          <span class="ml-auto text-xs font-mono text-gray-400 dark:text-slate-500" id="projectModalYear"></span>
+        </div>
+        <!-- Description -->
+        <p id="projectModalDesc" class="text-sm text-gray-600 dark:text-slate-400 leading-relaxed mb-6"></p>
+        <!-- Features -->
+        <div id="projectModalFeaturesWrap" class="mb-6">
+          <h4 class="text-xs font-bold font-mono uppercase tracking-wider text-gray-500 dark:text-slate-500 mb-3" id="projectModalFeaturesLabel">Key Features</h4>
+          <ul id="projectModalFeatures" class="grid grid-cols-1 sm:grid-cols-2 gap-2"></ul>
+        </div>
+        <!-- What I Learned -->
+        <div id="projectModalLearnedWrap" class="mb-6">
+          <h4 class="text-xs font-bold font-mono uppercase tracking-wider text-gray-500 dark:text-slate-500 mb-3" id="projectModalLearnedLabel">What I Learned</h4>
+          <p id="projectModalLearned" class="text-sm text-gray-600 dark:text-slate-400 leading-relaxed"></p>
+        </div>
+        <!-- Tech Stack -->
+        <div class="mb-6">
+          <h4 class="text-xs font-bold font-mono uppercase tracking-wider text-gray-500 dark:text-slate-500 mb-3" id="projectModalTechLabel">Tech Stack</h4>
+          <div id="projectModalTech" class="flex items-center gap-3 flex-wrap"></div>
+        </div>
+        <!-- Footer: team + duration + link -->
+        <div class="flex items-center justify-between flex-wrap gap-4 pt-4 border-t border-white/10">
+          <div class="flex items-center gap-4">
+            <span id="projectModalTeam" class="inline-flex items-center gap-2 text-xs font-mono text-gray-400 dark:text-slate-500">
+              <i class="fa-solid fa-user"></i>
+              <span></span>
+            </span>
+            <span id="projectModalDuration" class="inline-flex items-center gap-2 text-xs font-mono text-gray-400 dark:text-slate-500">
+              <i class="fa-solid fa-clock"></i>
+              <span></span>
+            </span>
+          </div>
+          <a id="projectModalLink" href="#" target="_blank" class="inline-flex items-center gap-2 text-sm font-mono px-4 py-2 rounded-full bg-neon-cyan/10 text-neon-cyan border border-neon-cyan/30 hover:bg-neon-cyan/20 transition-colors">
+            <i class="fa-brands fa-github"></i>
+            <span>View on GitHub</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SKILL MODAL
+       ═══════════════════════════════════════════════════════════ -->
+  <div id="skillModal" class="skill-modal-backdrop hidden" aria-hidden="true">
+    <div class="skill-modal-content glass-card p-8 md:p-10 max-w-md w-full mx-4 relative">
+      <button id="skillModalClose" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors text-lg" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="flex items-center gap-4 mb-6">
+        <div id="skillModalIcon" class="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center overflow-hidden"></div>
+        <div>
+          <h3 id="skillModalTitle" class="text-xl font-bold font-mono text-gray-800 dark:text-white"></h3>
+          <span id="skillModalLevel" class="inline-block text-xs font-mono px-2.5 py-1 rounded-full mt-1"></span>
+        </div>
+      </div>
+      <p id="skillModalDesc" class="text-sm text-gray-600 dark:text-slate-400 leading-relaxed"></p>
+    </div>
+  </div>
 
   <!-- ═══════════════════════════════════════════════════════════
        SCRIPTS
